@@ -37,7 +37,7 @@ if g_new != g_old or g_old == None:
 # capture yewu url
 try:
     y = file(yewu_hash , 'r')
-    y_old = f.read()
+    y_old = y.read()
     y.close()
 except:
     y_old = None     
