@@ -1,0 +1,6 @@
+用于抓取公租房公告信息，及时通知自己能尽快办理相关租房业务；致北漂！！！
+
+1. 依赖pyquery
+      pip install pyquery
+2. 添加定时任务
+    */5 * * * * /usr/bin/python /home/zufang/zufang.py
