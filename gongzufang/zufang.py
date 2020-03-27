@@ -20,7 +20,7 @@ except:
     g_old = None
 
 g_ret = urllib.urlopen("%s/article/list/b02e7e29e33642f789e4d1e41db08b7d.html" % pre_url)
-if ret.getcode() == 200:
+if g_ret.getcode() == 200:
     g_page = g_ret.read()
     d = pq(g_page)
     div = d('.publicity')
@@ -49,7 +49,7 @@ except:
     y_old = None
 
 y_ret = urllib.urlopen(yewu_url)
-if ret.getcode() == 200:
+if y_ret.getcode() == 200:
     y_page = y_ret.read()
     y_new = str(hash(y_page))
 
